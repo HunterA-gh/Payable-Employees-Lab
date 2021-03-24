@@ -10,11 +10,6 @@ public class SalariedEmployee extends Employee {
     }
 
     @Override
-    public String paidAmount(){
-        return String.format("%s" + "%.2f", "$", this.calculatePay());
-    }
-
-    @Override
     public double calculatePay() {
         return salary / 12;
     }

@@ -1,8 +1,9 @@
 public abstract class Person implements IPayable{
     private String name;
 
-    @Override
-    public abstract String paidAmount();
+    public String paidAmount(){
+        return String.format("%s" + "%.2f", "$", this.calculatePay());
+    }
 
     public abstract double calculatePay();
 

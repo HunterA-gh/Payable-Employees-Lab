@@ -14,10 +14,6 @@ public class HourlyEmployee extends Employee{
         this.hoursWorked = hoursWorked;
     }
 
-    @Override
-    public String paidAmount(){
-        return String.format("%s" + "%.2f", "$", this.calculatePay());
-    }
 
     @Override
     public double calculatePay() {
