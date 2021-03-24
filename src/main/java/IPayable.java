@@ -1,0 +1,4 @@
+interface IPayable {
+
+    String paidAmount();
+}
